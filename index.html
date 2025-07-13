@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="row">
+            <div class="left-side">
+                <div class="media-upload">
+                    <p> Drag & Drop Media Here or <span class="browse">Browse</span></p>
+                    <input type="file" class="file" multiple="multiple" accept="image/png, image/jpeg, image/jpg, image/gif, video/*">
+                </div>
+                <div class="media-list">
+                    <form id="media-list-form">
+                        <h1>Media List</h1>
+                        <div class="media-entry">
+                            <div class="media-entry-clickable">
+                                <div class="media-entry-preview">
+                                    <img src="skeleton.png">
+                                </div>
+                                <div class="media-entry-name">
+                                    file.png
+                                </div>
+                            </div>
+                            
+                            <button class="media-entry-delete">
+                                X
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="media-preview">
+                    <h1>Media Preview</h1>
+                </div>
+                <div class="media-toggle">
+                    <button class="vidnet-toggle">vidnet</button>
+                    <button class="marquee-toggle">marquee</button>
+                </div>
+                <div class="media-info">
+                    <h1>Media Info</h1>
+                    File Type: Image (.png) <br>
+                    File Dimensions: 1920x1080 pixels <br>
+                    File DPI: <br>
+                    Video Duration: <br>
+                    Message <button class="copy-message"> </button> :
+                </div>
+            </div>
+        </div>
+        <script src="renderer.js"></script>
+    </body>
+</html>
